@@ -9,11 +9,24 @@ sap.ui.define([
 		onShowHello : function () {
 			// read msg from i18n model
 			var oBundle = this.getView().getModel("i18n").getResourceBundle();
-			var sRecipient = this.getView().getModel().getProperty("/recipient/name");
-			var sMsg = oBundle.getText("helloMsg", [sRecipient]);
+			// below retrieves the value in the input field
+			var sRecipient = this.getView().byId("inputCase").getValue();
+			var sMsg = oBundle.getText(sRecipient);
+			var sErrMsf = oBundle.getText("notValid");
+			
+			// Below isn't great it gives access to the whole i18n file
+			MessageToast.show(sMsg, {
+				duration: 30000 // 30 second duration to follow rule book
+			});	
 
-			// show message
-			MessageToast.show(sMsg);
+			// if(sRecipient == 1){
+			// 	MessageToast.show(sMsg, {
+			// 		duration: 30000 // 30 second duration to follow rule book
+			// 	});	
+			// }
+			// else{
+			// 	MessageToast.show(sErrMsf)
+			// }
 		}
 	});
 

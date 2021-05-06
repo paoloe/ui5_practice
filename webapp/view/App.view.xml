@@ -9,7 +9,7 @@
 				<Page title="{i18n>homePageTitle}">
 					<content>
 						<Panel
-							headerText="{i18n>helloPanelTitle}"
+							headerText="{i18n>hdCas}"
 							class="sapUiResponsiveMargin"
 							width="auto">
 							<content>
@@ -17,13 +17,46 @@
 									text="{i18n>showHelloButtonText}"
 									press=".onShowHello"
 									class="sapUiSmallMarginEnd"/>
-								<Input
-									value="{/recipient/name}"
+								<!-- provided the below an ID so I can retrieve its value -->
+								<InputBase
+									id="inputCase" 
+									placeholder="{i18n>iaCas}"
 									valueLiveUpdate="true"
 									width="60%"/>
-								<Text
-									text="Hello {/recipient/name}"
-									class="sapUiSmallMargin"/>
+							</content>
+						</Panel>
+					</content>
+					<content>
+						<Panel
+							headerText="{i18n>hdSol}"
+							class="sapUiResponsiveMargin"
+							width="auto">
+							<content>
+								<Button
+									text="{i18n>showHelloButtonText}"
+									press=".onShowHello"
+									class="sapUiSmallMarginEnd"/>
+								<InputBase
+									placeholder="{i18n>iaSol}"
+									valueLiveUpdate="true"
+									width="60%"/>
+							</content>
+						</Panel>
+					</content>
+					<content>
+						<Panel
+							headerText="{i18n>hdChe}"
+							class="sapUiResponsiveMargin"
+							width="auto">
+							<content>
+								<Button
+									text="{i18n>showHelloButtonText}"
+									press=".onShowHello"
+									class="sapUiSmallMarginEnd"/>
+								<InputBase
+									placeholder="{i18n>iaSol}"
+									valueLiveUpdate="true"
+									width="60%"/>
 							</content>
 						</Panel>
 					</content>
