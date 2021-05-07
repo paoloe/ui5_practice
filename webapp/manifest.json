@@ -50,7 +50,11 @@
 					],
 					"fallbackLocale": ""
 				}
-			}
+			},
+			"oModel": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "mydata.json"
+			  }
 		}
 	}
 }
