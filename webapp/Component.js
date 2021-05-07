@@ -14,14 +14,14 @@ sap.ui.define([
 			// call the init function of the parent
 			UIComponent.prototype.init.apply(this, arguments);
 
-			// set data model
-			var oData = {
-				recipient : {
-					name : "1"
-				}
-			};
-			var oModel = new JSONModel(oData);
-			this.setModel(oModel);
+			var oModel = new JSONModel();
+			oModel.loadData("mydata.json");
+			oModel.attachRequestCompleted(function(oEventModel){
+				console.log(oModel.getData());
+				// console.log(JSON.stringify(oModel.getData()));
+				//This is called after data is loading
+			});
+			this.setModel(oModel)
 		}
 	});
 
