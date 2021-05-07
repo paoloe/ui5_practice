@@ -12,7 +12,7 @@ sap.ui.define([
 			var oBundl2 = this.getView().getModel("oModel").getResourceBundle();
 			// below retrieves the value in the input field
 			var sRecipient = this.getView().byId("inputCase").getValue();
-			var sMsg = oBundl2.read('/oModel/1');
+			var sMsg = oBundl2.getData();
 			var sErrMsf = oBundle.getText("notValid");
 			
 			// Below isn't great it gives access to the whole i18n file

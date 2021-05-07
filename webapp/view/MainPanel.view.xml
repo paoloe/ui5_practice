@@ -1,0 +1,52 @@
+<mvc:View
+    controllerName="sap.ui.demo.walkthrough.controller.MainPanel"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc">
+    <Panel
+        headerText="{i18n>hdCas}"
+        class="sapUiResponsiveMargin"
+        width="auto">
+        <content>
+            <Button
+                text="{i18n>showHelloButtonText}"
+                press=".onShowHello"
+                class="sapUiSmallMarginEnd"/>
+            <!-- provided the below an ID so I can retrieve its value -->
+            <InputBase
+                id="inputCase" 
+                placeholder="{i18n>iaCas}"
+                width="60%"/>            
+        </content>
+    </Panel>
+        <Panel
+        headerText="{i18n>hdSol}"
+        class="sapUiResponsiveMargin"
+        width="auto">
+        <content>
+            <Button
+                text="{i18n>showHelloButtonText}"
+                press=".onShowHello"
+                class="sapUiSmallMarginEnd"/>
+            <InputBase
+                id="inputSolution"
+                placeholder="{i18n>iaSol}"
+                width="60%"/>            
+        </content>
+    </Panel>
+    <Panel
+        headerText="{i18n>hdChe}"
+        class="sapUiResponsiveMargin"
+        width="auto">
+        <content>
+            <Button
+                text="{i18n>showHelloButtonText}"
+                press=".onShowHello"
+                class="sapUiSmallMarginEnd"/>
+            <InputBase
+                id="inputHint"
+                placeholder="{i18n>iaHin}"
+                width="60%"/>            
+        </content>
+    </Panel>
+</mvc:View>
+

@@ -8,57 +8,7 @@
 			<pages>
 				<Page title="{i18n>homePageTitle}">
 					<content>
-						<Panel
-							headerText="{i18n>hdCas}"
-							class="sapUiResponsiveMargin"
-							width="auto">
-							<content>
-								<Button
-									text="{i18n>showHelloButtonText}"
-									press=".onShowHello"
-									class="sapUiSmallMarginEnd"/>
-								<!-- provided the below an ID so I can retrieve its value -->
-								<InputBase
-									id="inputCase" 
-									placeholder="{i18n>iaCas}"
-									valueLiveUpdate="true"
-									width="60%"/>
-							</content>
-						</Panel>
-					</content>
-					<content>
-						<Panel
-							headerText="{i18n>hdSol}"
-							class="sapUiResponsiveMargin"
-							width="auto">
-							<content>
-								<Button
-									text="{i18n>showHelloButtonText}"
-									press=".onShowHello"
-									class="sapUiSmallMarginEnd"/>
-								<InputBase
-									placeholder="{i18n>iaSol}"
-									valueLiveUpdate="true"
-									width="60%"/>
-							</content>
-						</Panel>
-					</content>
-					<content>
-						<Panel
-							headerText="{i18n>hdChe}"
-							class="sapUiResponsiveMargin"
-							width="auto">
-							<content>
-								<Button
-									text="{i18n>showHelloButtonText}"
-									press=".onShowHello"
-									class="sapUiSmallMarginEnd"/>
-								<InputBase
-									placeholder="{i18n>iaSol}"
-									valueLiveUpdate="true"
-									width="60%"/>
-							</content>
-						</Panel>
+						<mvc:XMLView viewName="sap.ui.demo.walkthrough.view.MainPanel"/>
 					</content>
 				</Page>
 			</pages>
