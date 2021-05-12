@@ -8,8 +8,9 @@
         width="auto">
         <content>
             <Button
+                id = "btnCase"
                 text="{i18n>showHelloButtonText}"
-                press=".onShowData"
+                press=".onRetrieveData('btnCase')"
                 class="sapUiSmallMarginEnd"/>
             <!-- provided the below an ID so I can retrieve its value -->
             <InputBase
@@ -24,8 +25,9 @@
         width="auto">
         <content>
             <Button
+                id="btnSolution"
                 text="{i18n>showHelloButtonText}"
-                press=".onShowData"
+                press=".onRetrieveData('btnSolution')"
                 class="sapUiSmallMarginEnd"/>
             <InputBase
                 id="inputSolution"
@@ -39,8 +41,9 @@
         width="auto">
         <content>
             <Button
+                id = "btnHint"
                 text="{i18n>showHelloButtonText}"
-                press=".onShowData"
+                press=".onRetrieveData('btnHint')"
                 class="sapUiSmallMarginEnd"/>
             <InputBase
                 id="inputHint"

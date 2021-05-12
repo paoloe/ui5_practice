@@ -1,5 +1,5 @@
 { 
-    "oModel": [
+    "case": [
         {   
             "id": "1",
             "desc": "Case 1: Adventures of the Unholy Man"  
@@ -7,6 +7,18 @@
         {
             "id": "2",
             "desc": "Case 2: ..."
+        }
+    ],
+    "solution":[
+        {
+            "id": "1",
+            "desc": ""
+        }
+    ],
+    "hint":[
+        {
+            "id": "1",
+            "desc": ""
         }
     ]
 }
